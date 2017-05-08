@@ -6,9 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 /**
- * Created by ramg on 5/4/2017.
+ * To display the message from parent activity to next activity
  */
-
 public class DisplayMessageActivity extends AppCompatActivity {
 
     @Override
@@ -18,7 +17,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
-        String message = /*intent.getStringExtra(MainActivity.EXTRA_MESSAGE);*/"hiRaniyaa";
+        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         // Capture the layout's TextView and set the string as its text
         TextView textView = (TextView) findViewById(R.id.textView);
